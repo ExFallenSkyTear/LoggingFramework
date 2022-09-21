@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class LoggingManager {
-    private ArrayList<LogLine> logLines = new ArrayList<>();
+    private final ArrayList<LogLine> logLines = new ArrayList<>();
 
     private LogLevel level = LogLevel.Info;
 

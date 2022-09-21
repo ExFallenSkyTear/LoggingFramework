@@ -15,10 +15,10 @@ public class Main {
 
         LogLine testLine = globalLogger.getLine(globalLogger.getLinesCount() - 1);
 
-        System.out.println(String.format("[%s][%s](%s): %s",
+        System.out.printf("[%s][%s](%s): %s%n",
                 testLine.getDateTime().format(myFormatObj),
                 testLine.getLevel().getLabel(),
                 testLine.getSource(),
-                testLine.getMessage()));
+                testLine.getMessage());
     }
 }
