@@ -12,9 +12,9 @@ public enum LogLevel {
         this.label = label;
     }
 
-    private int value;
+    private final int value;
 
-    private String label;
+    private final String label;
 
     public int getValue() {
         return value;
