@@ -1,20 +1,27 @@
 package com.java.framework.logging;
 
 public enum LogLevel {
-    Critical(0),
-    Error(1),
-    Warning(2),
-    Info(3),
-    Debug(4);
+    Critical(0, "Critical"),
+    Error(1, "Error"),
+    Warning(2, "Warning"),
+    Info(3, "Info"),
+    Debug(4, "D3bug");
 
-    LogLevel(int value) {
+    LogLevel(int value, String label) {
         this.value = value;
+        this.label = label;
     }
 
     private int value;
 
+    private String label;
+
     public int getValue() {
         return value;
+    }
+
+    public String getLabel() {
+        return label;
     }
 
     public String toString() {
